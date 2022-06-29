@@ -295,12 +295,12 @@ img {
 }
 
 .home__blob {
-  width: 200px;
+  width: 210px;
   fill: var(--first-color);
 }
 
 .home__blob-img {
-  width: 170px;
+  width: 200px;
 }
 
 .home__data {
@@ -425,14 +425,15 @@ img {
 }
 /*==================== SKILLS ====================*/
 .skills__container {
-  row-gap: 0;
+  row-gap: 0rem;
+
 }
 
 .skills__header {
   display: flex;
   align-items: center;
   margin-top: var(--mb-2-5);
-  margin-bottom: var(--mb-0-75);
+  margin-bottom:0;
   cursor: pointer;
 }
 
@@ -464,7 +465,7 @@ img {
   row-gap: 1.5rem;
   padding-left: 2.7rem;
 }
-.skills__titles {
+.skills__title {
   display: flex;
   justify-content: space-between;
   margin-bottom: var(--mb-0-5);
@@ -629,36 +630,6 @@ img {
 /*==================== PORTFOLIO ====================*/
 
 /*==================== PROJECT IN MIND ====================*/
-.project {
-  text-align: center;
-}
-
-.project__bg {
-  background-color: var(--first-color-second);
-  padding-top: 3rem;
-}
-
-.project__title {
-  font-size: var(--h2-font-size);
-  margin-bottom: var(--mb-0-75);
-  font-weight: var(--font-semi-bold);
-  color: var(--title-color);
-}
-
-.project__description {
-  margin-bottom: var(--mb-1-5);
-}
-
-.project__title,
-.project__description {
-  color: #fff;
-}
-
-.project__img {
-  width: 232px;
-  justify-self: center;
-}
-
 /*==================== CONTACT ME ====================*/
 .contact__container {
   row-gap: 3rem;
@@ -885,6 +856,7 @@ img {
 
   .about__container,
   .skills__container,
+  .skills__content,
   .protfolio__content,
   .project__container,
   .contact__container,

@@ -158,3 +158,30 @@ themeButton.addEventListener('click', () => {
   localStorage.setItem('selected-theme', getCurrentTheme())
   localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+
+document.querySelector(".contact__form").addEventListener("submit", submitForm);
+      function submitForm(e){
+        e.preventDefault();
+        var name = document.querySelector(".name").value;
+        var email = document.querySelector(".email").value;
+        var message = document.querySelector(".message").value;
+        
+        document.querySelector(".contact__form").reset();
+
+        sendEmail(name,email,message);
+      }
+
+function sendEmail(name, email, message) {
+  Email.send({
+  Host: "smtp.gmail.com",
+  Username: "akashkmishra9001@gmail.com",
+          Password: "_m$3N_!!8FLV8JZ",
+          To : "akashkmishra9001@gmail.com",
+          From : "akashkmishra9001@gmail.com",
+          Subject : "New Message from Form Enquiry",
+          Body : `Name: ${name} \nEmail: ${email} \nMessage: ${message}`
+        }).then(
+          (message) => alert("Message sent successfully!"),
+          );
+        }
